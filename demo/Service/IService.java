@@ -8,14 +8,14 @@ import java.util.List;
 
 public interface IService {
 
-    public AbstractEntity create(AbstractEntity entity) throws PlayerNotFoundException;
+     AbstractEntity create(AbstractEntity entity) throws PlayerNotFoundException;
 
-    public AbstractEntity update(AbstractEntity entity);
+    AbstractEntity update(AbstractEntity entity);
 
-    public boolean delete(long id) throws EntityNotFoundException;
+    boolean delete(long id) throws EntityNotFoundException;
 
-    public AbstractEntity findById(long id) throws EntityNotFoundException;
+    AbstractEntity findById(long id) throws EntityNotFoundException;
 
-    public List<AbstractEntity> readall();
+    List<AbstractEntity> readall();
 
 }
